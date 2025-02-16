@@ -9,7 +9,7 @@ if [ $# -lt 1 ]; then
 fi  
   
 # 设置Feishu Webhook的URL  
-URL="https://open.feishu.cn/open-apis/bot/v2/hook/0f45db6f-f9b7-4269-a5b1-6cdd29110673"  
+URL="https://open.feishu.cn/open-apis/bot/v2/hook/0f45db6f-f9b7-4269-a5b1-6c10673"  
   
 # 将传入的第一个参数（即消息内容）赋值给变量MSG  
 # 使用sed命令将消息中的双引号替换为转义的双引号（\"），这是为了确保JSON格式正确  

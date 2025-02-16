@@ -65,3 +65,17 @@ echo "################# 占用CPU最高的前三个进程 #################"
 process_cpu_top
 echo "################# 占用内存最高的前三个进程 #################"
 process_memory_top
+
+
+
+
+# //chmod +x 之后  放.bash_profile 
+# // /etc/motd  登录提示符 
+
+
+# //或者软连接过去 ln -s /server/scripts/devopsshell/02.sys_login_info.sh 
+# /etc/profile.d/sys_login_info.sh
+# [root@oldboy-devops-shell /server/scripts/devopsshell]# ll /etc/profile.d/sys_login_info.sh
+# lrwxrwxrwx 1 root root 49 6月  16 17:35 
+# /etc/profile.d/sys_login_info.sh -> 
+# /server/scripts/devops-shell/02.sys_login_info.sh

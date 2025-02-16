@@ -30,3 +30,5 @@ if [[ ${shm_size} -lt ${mem_size_4} ]] || [[ ${shm_size} -gt $(( ${mem_size_6} )
         echo "Failed to adjust /dev/shm size."
     fi
 fi
+
+#Bash脚本用于监控并调整 /dev/shm（共享内存文件系统）的大小

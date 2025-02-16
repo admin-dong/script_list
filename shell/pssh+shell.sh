@@ -1,6 +1,7 @@
 #!/bin/bash
 # __author__: bogeit
 
+##https://blog.csdn.net/weixin_46887489/article/details/134222049?spm=1001.2014.3001.5502
 Help(){
     echo "Usage:"
     echo "bash $0 ssh   (1.1.1.1|ip.txt) off 'ip r'"

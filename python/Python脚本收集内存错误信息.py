@@ -65,3 +65,14 @@ if __name__ == "__main__":
     # 如果第一个命令行参数是"disk_error"
     if sys.argv[1] == "disk_error":
         print(check_disk_error())  # 输出硬盘错误检查的结果
+
+
+
+# #
+# 1. check_mem_error() 函数：此函数用于检查内存错误，通过搜索EDAC监控子系统中的错误计数来实现。
+# 2. check_disk_error() 函数：此函数用于检查硬盘错误，通过搜索/var/log/messages中的相关日志条目来实现。
+# 3. 主程序：程序接受一个命令行参数。如果参数是"disk_error"，则运行check_disk_error()函数并打印结果。
+# 注意事项：
+# ● run_command函数是从自定义库utils导入的，用于执行shell命令并返回命令的状态和结果。
+# ● 脚本假定系统日志中包含有关硬盘错误的日志条目，并使用正则表达式来过滤这些条目。
+# ● 脚本在执行时需要一个命令行参数来指定要执行的检查类型。
